@@ -4,7 +4,7 @@
  * Save this file as: wp-content/plugins/your-plugin-folder/templates/single-job_listing.php
  */
 
-echo View::core_partial('header'); ?>
+get_header(); ?>
 
 <div class="job-detail-container">
     <?php while (have_posts()) : the_post(); ?>
@@ -658,4 +658,5 @@ echo View::core_partial('header'); ?>
 </style>
 
 
-<?php echo View::core_partial('footer'); ?>
+
+<?php get_footer(); ?>
